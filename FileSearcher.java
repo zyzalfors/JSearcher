@@ -13,8 +13,8 @@ import java.awt.event.ActionListener;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-public class FileSearcher
-{
+public class FileSearcher {
+	
 	static BigInteger nDirs, nFiles;
 	
 	static String filterRegex(String regex) {
