@@ -75,7 +75,7 @@ public class FileSearcher {
          String[] columnNames = {"", "Type", "Last modified", "Size (byte)", "Parent directory", "Name"};
          DefaultTableModel tableModel = new DefaultTableModel(columnNames, 0);
          JTable reportTable = new JTable(tableModel);
-         JFrame mainFrame = new JFrame("JSearcher 1.0.0");
+         JFrame mainFrame = new JFrame("JSearcher");
          mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
          JTextField dirPathText = new JTextField(40);
          JTextField regexText = new JTextField(40);
@@ -98,7 +98,7 @@ public class FileSearcher {
      
          aboutButton.addActionListener(new ActionListener() {
           public void actionPerformed(ActionEvent e) {
-           JOptionPane.showMessageDialog(null, "Author: Al Armato\nVersion: 1.0.0\n\n" + 
+           JOptionPane.showMessageDialog(null, "Author: zyzalfors\n\n" + 
                 "This program is free software: you can redistribute it and/or modify\n" + 
        	        "it under the terms of the GNU General Public License as published by\n" + 
        	        "the Free Software Foundation, either version 3 of the License, or\n" + 
@@ -156,7 +156,7 @@ public class FileSearcher {
 	     String[] row = stringRow.split("\\|");
 	     tableModel.addRow(row);
 	    }
-	    JFrame reportFrame = new JFrame ("JSearcher 1.0.0 Report");
+	    JFrame reportFrame = new JFrame ("JSearcher Report");
 	    JMenuBar menuBar = new JMenuBar();
 	    JMenu menu = new JMenu("File");
 	    JMenuItem saveItem = new JMenuItem("Save as");
